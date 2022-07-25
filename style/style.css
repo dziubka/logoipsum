@@ -66,3 +66,40 @@
     background: rgba(255, 113, 67, 1);
     transition: 500ms;
 } */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 104px auto 85px;
+}
+
+.about__title{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.50105px;
+    color: #19191B;
+    max-width: 467.24px;
+    margin-bottom: 30px;
+}
+
+.about__text{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+    max-width: 464.21px;
+    margin-bottom: 50px;
+}
+
+.button__violet{
+    background: rgba(84, 84, 212, 1);
+}
+
+.button__transparent{
+    background: none;
+    color: rgba(84, 84, 212, 1);
+    border: 1px solid rgba(84, 84, 212, 1);
+    margin-left: 35px;
+}
