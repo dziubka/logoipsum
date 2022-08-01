@@ -7,22 +7,31 @@
     font-style: normal;
 }
 
-.header{
-    background-color: rgba(255, 113, 67, 0.27);
-    padding: 38px 0px 47px 0px;
-}
-
-.header__flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .container{
     max-width: 1070px;
     margin: 0 auto;
 }
 
+.flex__container{
+    display: flex;
+    padding-bottom: 132px;
+}
+/* flex */
+.header__flex, .footer__flex, .about, .feedback, .tariffs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header, footer */
+.header, .footer{
+    background-color: rgba(255, 113, 67, 0.27);
+    padding: 38px 0px 47px 0px;
+}
+
+.footer{
+    padding: 53px 0px;
+}
+/* navigation */
 .nav__li{
     display: inline-block;
 }
@@ -44,7 +53,7 @@
     color: black;
     transition: 300ms;
 }
-
+/* buttons */
 .button{
     width: 212.39px;
     height: 60px;
@@ -62,15 +71,35 @@
     background: rgba(255, 113, 67, 1);
 }
 
-/* .button__orange:hover{
-    background: rgba(255, 113, 67, 1);
-    transition: 500ms;
-} */
+.button__violet{
+    background: rgba(84, 84, 212, 1);
+}
 
+.button__transparent{
+    background: none;
+    color: rgba(84, 84, 212, 1);
+    border: 1px solid rgba(84, 84, 212, 1);
+    margin-left: 35px;
+}
+
+.button__white{
+    width: 285px;
+    background: #FFFFFF;
+    border: 1px solid #EAE9F2;
+    border-radius: 10px;
+    color: #5454D4;
+    margin-left: 24px;
+}
+
+.button__darkorange{
+    width: 285px;
+    background: #9F3919;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-left: 24px;
+}
+/* about */ 
 .about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 104px auto 85px;
 }
 
@@ -92,14 +121,104 @@
     max-width: 464.21px;
     margin-bottom: 50px;
 }
-
-.button__violet{
-    background: rgba(84, 84, 212, 1);
+/* feedback */
+.feedback{
+    margin: 0px auto 85px;
 }
 
-.button__transparent{
+.feedback__title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+    max-width: 556px;
+    margin-bottom: 38px;
+}
+
+.input{
+    width: 302px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
     background: none;
-    color: rgba(84, 84, 212, 1);
-    border: 1px solid rgba(84, 84, 212, 1);
-    margin-left: 35px;
+    border: 1px solid rgba(112, 135, 255, 1);
+    border-radius: 10px;
+    margin-right: 39px;
+    outline: 0;
+    padding: 0 14px ;
+}
+
+.input::placeholder{
+    color: black;
+}
+/* tariffs */
+.tariffs__title{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    max-width: 504px;
+    margin-bottom: 98px;
+}
+
+.tariffs__container{
+    width: 330px;
+    height: 441px;
+    background: rgba(248, 248, 248, 1);
+    border-radius: 10px;
+    margin-left: 100;
+}
+
+.tariffs__container__orange{
+    width: 330px;
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+    border-radius: 10px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tariffs__name{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+    color: #696871;
+    padding-top: 34px;
+}
+
+.tariffs__price{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    padding-top: 22px;
+}
+
+.tariffs__price span{
+    font-size: 28px;
+}
+
+.tariffs__about{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #696871;
+    padding-top: 28px;
+    padding-bottom: 36px;
+}
+
+.tariffs__name__white, .tariffs__price__white, .tariffs__about__white{
+    color: white;
 }
